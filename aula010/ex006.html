@@ -7,18 +7,36 @@
     <title>Eventos DOM</title>
     <style>
         div#area {
-            background: rgba(0, 128, 0, 0.486);
+            background: green;
             color: white;
             width: 200px;
             height: 200px;
             text-align: center;
-            font: normal 20pt arial
+            font: normal 20pt arial;
         }
     </style>
 </head>
 <body>
     <div id="area">
-        interaja...
+        Interaja...
     </div>
+    <script>
+        var a = document.querySelector('div#area > p')
+        var b = document.getElementById('area')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+        function clicar(){
+            b.innerText = 'Clicou!'
+            b.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            b.innerText = 'Entrou!'
+        }
+        function sair(){
+            b.innerText = 'Saiu!'
+            b.style.backgroundColor = 'green'
+        }
+    </script>
 </body>
 </html>
