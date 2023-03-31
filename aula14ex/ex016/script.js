@@ -5,7 +5,7 @@ function contar(){
         res.innerHTML = 'Impossível contar!'
         alert('[ERRO] Faltam Dados!')
     } else {
-        res.innerHTML = 'Contando...'
+        res.innerHTML = 'Contando... '
         let i = Number(num[0].value)
         let f = Number(num[1].value)
         let p = Number(num[2].value)
